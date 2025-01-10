@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ikhdaamel.p10.ui.view.HomeView
+import com.ikhdaamel.p10.ui.view.InsertMhsView
 
 fun PengelolaHalaman(
     modifier: Modifier,
@@ -22,6 +23,14 @@ fun PengelolaHalaman(
                 navgateToItemEntry = {
                     navController.navigate(DestinasiInsert.route)
                 },
+            )
+        }
+        composable(DestinasiInsert.route) {
+            InsertMhsView(
+                onBack = {navController.popBackStack()},
+                onNavigate = {
+                    navController.navigate(DestinasiHome.route)
+                }
             )
         }
     }
