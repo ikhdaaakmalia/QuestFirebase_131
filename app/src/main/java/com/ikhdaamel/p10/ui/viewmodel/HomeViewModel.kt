@@ -35,6 +35,15 @@ class HomeViewModel (private val repoMhs: RepositoryMhs)  : ViewModel(){
                 }
         }
     }
+    fun deleteMhs(mahasiswa: Mahasiswa){
+        viewModelScope.launch {
+            try {
+                mhs.deleteMhs(mahasiswa)
+            } catch (e: Exception) {
+                mhsUIState = HomeUiState.Error(e)
+            }
+        }
+    }
 }
 
 //yg harus ada dlm home ini ada 3: loading, menampilkan(sukses), eror
