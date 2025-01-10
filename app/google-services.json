@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "451422423698",
+    "project_id": "pampam-3c77f",
+    "storage_bucket": "pampam-3c77f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451422423698:android:8fb64b439262610794344b",
+        "android_client_info": {
+          "package_name": "com.ikhdaamel.p10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkRJD4SqnbykV9LS6xFUnBSJZBTt5Gcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
