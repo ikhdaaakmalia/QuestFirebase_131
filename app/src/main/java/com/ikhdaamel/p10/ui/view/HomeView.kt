@@ -51,16 +51,14 @@ import com.ikhdaamel.p10.ui.viewmodel.HomeUiState
 import com.ikhdaamel.p10.ui.viewmodel.HomeViewModel
 import com.ikhdaamel.p10.ui.viewmodel.PenyediaViewModel
 
-class HomeView {
-}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(
+fun HomeView(
     navigateToItemEntry: () -> Unit,
     modifier: Modifier = Modifier,
     onDetailClick: (String) -> Unit = {},
-    viewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory)
-
+    viewModel: HomeViewModel = viewModel(factory = PenyediaViewModel.Factory),
 ){
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold (
@@ -84,6 +82,7 @@ fun HomeScreen(
             }
         )
     }
+
 }
 
 @Composable
